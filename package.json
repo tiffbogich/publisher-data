@@ -1,0 +1,101 @@
+{
+  "name": "publisher-data",
+  "version": "0.0.0",
+  "description": "Data used in publisher assessment of profits",
+  "sources": [
+    {
+      "name": "Wiley financial reports",
+      "web": "http://www.wiley.com/WileyCDA/Section/id-370237.html "
+    },
+    {
+      "name": "Elsevier financial reports",
+      "web": "http://www.reedelsevier.com/investorcentre/reports%202007/Pages/2004.aspx "  
+    },
+    {
+      "name": "Springer Science + Business Media financial reports",
+      "web": "http://www.springer.com/about+springer/company+information/annual+report?SGWID=0-175705-0-0-0 "
+    },
+    {
+      "name": "PLOS financial reports",
+      "web": "http://www.plos.org/about/financials/  "
+    }
+  ],
+  "license": {
+    "type": "DbCL-1.0",
+    "url": "http://opendatacommons.org/licenses/dbcl/1.0/"
+  },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/tiffbogich/publisher-data.git",
+      "path": "data/revenues-and-profits"
+    }
+  ],
+  "keywords": [
+    "publishing",
+    "revenue",
+    "profit",
+    "wiley",
+    "elsevier",
+    "plos",
+    "springer"
+  ],
+  "author": "Tiffany Bogich <tiffany@standardanalytics.io>",
+  "resources": [
+    {
+      "name": "revenues-and-profits",
+      "format": "csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "year",
+            "description": "year assessed",
+            "type": "number"
+          },
+          {
+            "name": "Elsevier-Profits-mGBP",
+            "description": "Profits for Elsevier in millions GBP",
+            "type": "number"
+          },
+          {
+            "name": "Elsevier-Revenue-mGBP",
+            "description": "Revenue for Elsevier in millions GBP",
+            "type": "number"
+          },
+          {
+            "name": "Wiley-STM-Profits-mGBP",
+            "description": "Profits for Wiley in millions USD",
+            "type": "number"
+          },
+          {
+            "name": "Wiley-STM-Revenue-mUSD",
+            "description": "Revenue for Wiley in millions USD",
+            "type": "number"
+          },
+          {
+            "name": "Springer-Sales-mEU",
+            "description": "Sales for Springer in millions EU",
+            "type": "number"
+          },
+          {
+            "name": "Springer-Adjusted-EBITDA-mEU",
+            "description": "Adjusted EBITDA for Springer in millions EU",
+            "type": "number"
+          },
+          {
+            "name": "PLOS-Total-Revenue-mUSD",
+            "description": "PLOS total revenue in millions USD",
+            "type": "number"
+          },
+          {
+            "name": "PLOS-author-fees-net-mUSD",
+            "description": "PLOS author fees net in millions USD",
+            "type": "number"
+          }
+
+        ]
+      },
+      "url": "https://registry.standardanalytics.io/publisher-data/0.0.0/revenues-and-profits"
+    }
+  ]
+}
